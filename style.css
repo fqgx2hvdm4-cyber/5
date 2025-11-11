@@ -1,0 +1,43 @@
+/* --- ПІДКЛЮЧЕННЯ ЛОКАЛЬНОГО ШРИФТУ --- */
+@font-face {
+  font-family: 'GoldenGoose';
+  /* Краще використовувати відносний шлях, наприклад, fonts/golden_goose.ttf */
+  src: url('fonts/golden_goose.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* --- ОСНОВНІ СТИЛІ --- */
+body {
+  margin: 40px;
+  background-color: #f9f9f9;
+  color: #222;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section {
+  background: #fff;
+  padding: 20px 30px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* --- КЛАСИ ДЛЯ ШРИФТІВ --- */
+.local-font {
+  font-family: 'GoldenGoose', serif;
+  font-size: 22px;
+  color: #2a2a2a;
+}
+
+.google-font {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  color: #444;
+}
