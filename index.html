@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Приклад локального і Google шрифту</title>
+
+  <!-- Підключаємо Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Локальний шрифт */
+    @font-face {
+      font-family: 'GoldenGoose';
+      src: url('C:/Users/anast/Downloads/golden_goose/goldengouse.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #222;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    section {
+      background: #fff;
+      padding: 20px 30px;
+      margin-bottom: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .local-font {
+      font-family: 'GoldenGoose', serif;
+      font-size: 22px;
+      color: #2a2a2a;
+    }
+
+    .google-font {
+      font-family: 'Poppins', sans-serif;
+      font-size: 22px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <h1>Демонстрація шрифтів</h1>
+
+  <section>
+    <h2>1. Локальний шрифт — Golden Goose</h2>
+    <p class="local-font">
+      Це приклад тексту, який відображається локальним шрифтом <b>Golden Goose</b>.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Шрифт із Google Fonts — Poppins</h2>
+    <p class="google-font">
+      Це приклад тексту, який використовує шрифт <b>Poppins</b> із Google Fonts.
+    </p>
+  </section>
+</body>
+</html>
